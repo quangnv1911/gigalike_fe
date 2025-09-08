@@ -1,255 +1,168 @@
-# GigaAdmin Dashboard
+# <p align="center" style="font-size:40px; font-weight: bold;">Angular Boilerplate</p>
 
-Modern admin dashboard built with Angular, TypeScript, Tailwind CSS, and PrimeNG.
+<p align="center">
+     <img src="public/icons/icon-512x512.png" alt="angular" width="90">
+     <img src="https://cdn-icons-png.flaticon.com/512/1408/1408941.png" alt="document" width="90">
+</p>
 
-## 🚀 Features
+> ### A Fully-Configured Angular v20 Boilerplate for Enterprise-Grade Applications
 
-- **Angular 20** with SSR (Server-Side Rendering)
-- **TypeScript** for type safety
-- **Tailwind CSS** for utility-first styling
-- **PrimeNG** for rich UI components
-- **Axios** for HTTP client
-- **Zoneless** Angular application
-- **ESLint & Prettier** for code quality
-- **Husky** for git hooks
-- **CI/CD** with GitHub Actions
+---
 
-## 🛠️ Tech Stack
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f3d0969-3549-4300-863d-06a1d6785cd0/deploy-status)](https://app.netlify.com/sites/angular-boiler-palte/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)]()
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 
-- **Framework**: Angular 20
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS + SCSS
-- **UI Components**: PrimeNG
-- **HTTP Client**: Axios
-- **Icons**: PrimeIcons
-- **Linting**: ESLint
-- **Formatting**: Prettier
-- **Git Hooks**: Husky
-- **Deployment**: Firebase Hosting
+## [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/arslanameer)
 
-## 📦 Installation
+- ⬇️ Older Versions
+  - [Angular 19 Branch](https://github.com/ArslanAmeer/angular-boilerplate/tree/angular-v19)
+  - [Angular 18 Branch](https://github.com/ArslanAmeer/angular-boilerplate/tree/angular-v18)
+  - [Angular 16 Branch](https://github.com/ArslanAmeer/angular-boilerplate/tree/angular-v16)
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd admin
-   ```
+Get started fast with this **Angular 20** boilerplate, crafted for **enterprise-level scalability**. It integrates critical features like **authentication**, **lazy loading**, **real-time socket communication**, **service workers**, **shell layout (header+sidebar)** making it ready to handle everything from SaaS platforms to enterprise dashboards. Built on the latest **Angular 20**, this template is packed with the newest capabilities and ensures that you adhere to **modern development best practices**.
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+With a solid foundation of **PWA (Progressive Web App)**, **authentication**, **role-based permissions**, **HTTP interceptors**, **socket integration**, and more, this boilerplate takes care of the core setup so you can focus on building features.
 
-3. Set up environment variables:
-   ```bash
-   cp src/environments/environment.example.ts src/environments/environment.ts
-   ```
+### Key Features:
 
-4. Run the development server:
-   ```bash
-   npm start
-   ```
+- [x] **Angular 20**: Built with the latest version, utilizing improved standalone components and reactive forms.
+- [x] **PWA (Progressive Web App) support**: Fully configured to enable offline capabilities, background sync, and push notifications.
+- [x] **Scalable folder structure**: Optimized for enterprise-level applications with a modular design that adapts to growing project needs.
+- [x] **Separation of concerns**: Adopting [Domain-Driven Design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design) for a clear boundary between business logic and infrastructure code.
+- [x] **Modularization**: Components, services, pipes, and directives are split into reusable modules for easy maintenance and scalability.
+- [x] **Hybrid architecture**: Combines both standalone components and module-based structure, optimizing the initial app component as standalone and using modules for pages and shell.
+- [x] **[Lazy loading](https://angular.io/guide/lazy-loading-ngmodules)**: Efficiently loads only the necessary modules, improving app performance.
+- [x] **[Routing with guards](https://angular.io/guide/router)**: Robust routing system with [authentication and authorization guards](https://angular.io/api/router/CanActivate) for secured navigation.
+- [x] **Complete authentication system**: Pre-configured JWT-based authentication, including services, guards, and interceptors for seamless integration.
+- [x] **[Guards](https://angular.io/api/router/CanActivate)**: Role-based guards to protect routes and enforce permissions.
+- [x] **[Interceptors](https://angular.io/api/common/http/HttpInterceptor)**: Secure API communication with interceptors handling authentication and error management.
+- [x] **i18n Translation support**: Full [internationalization](https://angular.io/guide/i18n) for multi-language apps, with seamless integration of translation services.
+- [x] **Basic error handling**: Centralized error handling for smooth debugging and a better user experience.
+- [x] **Class-based entities**: Utilizing [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design) concepts for consistent and maintainable entity structures.
+- [x] **Implementation of [Class Transformers](https://github.com/typestack/class-transformer)**: Easily transform backend data models to frontend-friendly formats (e.g., snake_case to camelCase).
+- [x] **[Socket.io](https://socket.io/) integration**: Real-time updates with modular socket services that seamlessly integrate with the Angular ecosystem.
+- [x] **App updates in production**: Automatic app updates for production environments, ensuring users always get the latest features and fixes without manual intervention.
+- [x] **Environments for development and production**: Predefined configurations for different environments, ensuring smooth deployment and testing processes.
+- [x] **Utility functions**: A set of reusable functions to handle common tasks like:
+  - **Local storage obfuscation**: Getters and setters that automatically encrypt and decrypt data in production environments.
+- [x] **Helper functions**: Pre-configured helper functions for common development tasks, enhancing productivity and code quality.
+- [x] **Detailed documentation**: Comprehensive documentation for setup, dependencies, coding styles, utility functions, and more, to help developers get up to speed quickly.
+- [x] **Documented utility and helper functions**: Clearly explained and reusable across the application, with customization options.
 
-5. Open [http://localhost:4200](http://localhost:4200) in your browser.
+### Development Best Practices
 
-## 🏗️ Project Structure
+This boilerplate enforces **strict best practices** and includes a configured **ESLint flat config** to guide developers in writing clean, maintainable, and high-quality code:
 
-```
-admin/
-├── .husky/                 # Git hooks
-├── dist/                   # Build output
-├── src/
-│   ├── app/               # Angular components and modules
-│   ├── services/          # Angular services
-│   ├── environments/      # Environment configurations
-│   ├── assets/           # Static assets
-│   ├── styles.scss       # Global styles
-│   ├── main.ts           # Application bootstrap
-│   └── index.html        # HTML template
-├── angular.json          # Angular CLI configuration
-├── tailwind.config.js    # Tailwind CSS configuration
-└── tsconfig.json         # TypeScript configuration
-```
+- **Code Quality**: ESLint rules enforce coding standards like naming conventions, indentation, and eliminating unused code.
+- **No Direct Service Access**: Encourages a clean architecture by requiring components to interact with data via **UseCases**, keeping the service layer isolated.
+- **Modularization**: Promotes single-responsibility services, with each service handling only domain-specific tasks.
+- **Scoped Variables**: Enforces scoped use of variables and functions, reducing the risk of global state conflicts.
+- **Clean, Maintainable Code**: The **standalone component** and **module-based** hybrid structure optimizes performance and keeps the codebase organized.
+- **DRY Principle**: Adheres to **Don't Repeat Yourself (DRY)** principles, reducing redundancy and improving the maintainability of code.
+- **Security Awareness**: Built-in ESLint rules ensure you avoid common security pitfalls, ensuring secure and performant code.
 
-## 📜 Available Scripts
+### ESLint Configuration Highlights:
 
-- `npm start` - Start development server
-- `npm run build` - Build for production
-- `npm test` - Run unit tests
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint errors
-- `npm run format` - Format code with Prettier
-- `npm run format:check` - Check code formatting
+- **Strict Linting Rules**: Custom **ESLint flat config** enforces coding standards, ensuring consistent formatting and type checking across the codebase.
+- **Prettier Integration**: Maintains consistent code styling with automatic formatting on save or commit.
+- **Error Prevention**: Detects common issues early on, such as missing type declarations or direct DOM manipulations.
+- **Security Focused**: The configuration includes security-related rules to avoid risky code patterns.
 
-## 🎨 UI Components
+### Why Choose This Boilerplate?
 
-This project uses [PrimeNG](https://primeng.org/) for UI components:
+This Angular 20 boilerplate goes beyond just being a starting template—it's a **fully equipped foundation** for any **enterprise-level project**. From **fully configured authentication** and **lazy loading** to **role-based permissions** and **real-time communication**, it covers the most common requirements out-of-the-box.
 
-```typescript
-// Import components in your module
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { CardModule } from 'primeng/card';
+By enforcing **best coding practices** and strict **ESLint rules**, the boilerplate guarantees that every contributor to your project adheres to **high development standards**. Plus, the **modular, scalable architecture** and **cutting-edge Angular features** ensure that this project grows with you.
 
-@Component({
-  imports: [ButtonModule, TableModule, CardModule],
-  // ...
-})
-```
+Whether you’re developing a SaaS platform, building a dynamic web app, or designing an enterprise-level solution, this boilerplate gives you the tools you need—fast.
 
-## 🌐 API Integration
+### Continuous Updates
 
-Configured Axios service for API calls:
+This project will be regularly updated with the latest **Angular** releases, ensuring compatibility with the latest features and security updates. Stay tuned for new enhancements and features as they are added based on evolving development needs.
 
-```typescript
-@Injectable({
-  providedIn: 'root'
-})
-export class AdminApiService {
-  private api: AxiosInstance;
+### Demo:
 
-  constructor() {
-    this.api = axios.create({
-      baseURL: process.env['NG_APP_API_URL'],
-      timeout: 10000,
-    });
-  }
-}
-```
+Check out working demo [here](https://angular-boilerplate.arslanameer.com)
 
-## 📊 Dashboard Features
+> ## **Note:** <small style="color: red"> You can remove this with all the above lines and use rest in your documentation.</small>
 
-- **Dashboard Overview**: Key metrics and statistics
-- **Product Management**: CRUD operations for products
-- **User Management**: Manage user accounts and roles  
-- **Order Management**: Track and manage orders
-- **Analytics**: Charts and reports
+---
 
-## 🎯 Admin Functionalities
+# Web Front-End
 
-### Product Management
-- View all products in a data table
-- Add new products with form validation
-- Edit existing product details
-- Delete products with confirmation
-- Filter and search products
+## Status Badges
 
-### User Management
-- View user list with pagination
-- User role management
-- Account status control
-- User activity tracking
+<p align="right"> &nbsp;</p>
 
-### Order Management
-- View orders with different statuses
-- Update order status
-- Order details view
-- Export order data
+## 💻 Current Stack Version:
 
-## 🚀 Deployment
+- Node `^v22`
+- Angular `^v20`
 
-This project is configured for deployment on Firebase Hosting:
+<p align="right"> &nbsp;</p>
 
-1. Install Firebase CLI: `npm install -g firebase-tools`
-2. Login to Firebase: `firebase login`
-3. Initialize project: `firebase init`
-4. Build project: `npm run build`
-5. Deploy: `firebase deploy`
+## 🚀 Project setup
 
-## 🤝 Development Workflow
+If you want to setup this project locally and start developing, read setup and developers guide here: [Setup](docs/setup.md)
 
-1. Create a new branch from `develop`
-2. Make your changes
-3. Run linting and formatting: `npm run lint && npm run format`
-4. Commit changes (Husky will run pre-commit hooks)
-5. Push branch and create Pull Request
-6. GitHub Actions will run CI/CD pipeline
+<p align="right"> &nbsp;</p>
 
-## 📝 Environment Variables
+## 😎 Coding style
 
-Create environment files in `src/environments/`:
+We make use of **[Javascript Standard Style](https://standardjs.com/)** while developing.
 
-```typescript
-// environment.ts
-export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:3000/api',
-  firebaseConfig: {
-    // Firebase configuration
-  }
-};
-```
+You can integrate it with [eslint](https://eslint.org/) linter tool in your IDE to help smoothen the process by integrating automatic linting in compile time.
 
-## 🔧 Tailwind CSS Configuration
+We already have a `eslint.config.js` file in the root of the project which you can use to configure your IDE.
 
-Custom Tailwind configuration with PrimeNG compatibility:
+We also have husky hooks with prettier and eslint to make sure that the code is linted and formatted before committing.
 
-```javascript
-module.exports = {
-  content: ["./src/**/*.{html,ts,scss}"],
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: '#f0f9ff',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          // ...
-        }
-      }
-    },
-  },
-  plugins: [],
-}
-```
+If you want to read more about the rules, read [Coding style](docs/coding-style.md)
 
-## 🔍 Code Quality
+<p align="right"> &nbsp;</p>
 
-- **ESLint**: Angular and TypeScript rules
-- **Prettier**: Consistent code formatting  
-- **Husky**: Pre-commit hooks
-- **TypeScript**: Strict type checking
-- **Angular**: Zoneless architecture
+## 🧳 Dependencies
 
-## 🧪 Testing
+If you want to read more about dependencies in this platform, read [Dependencies](docs/dependencies.md)
 
-```bash
-# Run unit tests
-npm test
+<p align="right"> &nbsp;</p>
 
-# Run tests with coverage
-npm run test:coverage
+## 🪢 Helper and Utility functions
 
-# Run e2e tests
-npm run e2e
-```
+We have several documented helper and utility functions that play a big part of the platform. They are available in `@core\helpers` and `@core\utils` folder.
 
-## 📚 Learn More
+<p align="right"> &nbsp;</p>
 
-- [Angular Documentation](https://angular.dev/)
-- [PrimeNG Documentation](https://primeng.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Firebase Hosting](https://firebase.google.com/docs/hosting)
+---
 
-## 🔐 Authentication
+## 📜 Change Logs:
 
-The admin dashboard includes JWT-based authentication:
+_(Latest)_
 
-```typescript
-// Login example
-async login(credentials: LoginCredentials) {
-  const response = await this.api.post('/auth/login', credentials);
-  localStorage.setItem('adminToken', response.data.token);
-  return response.data.user;
-}
-```
+<p align="right"> &nbsp;</p>
 
-## 🎨 Theming
+## [Version 0.0.0] - 2025-07-20
 
-Supports custom themes with Tailwind CSS and PrimeNG:
+### Added
 
-- Light/Dark mode toggle
-- Custom color schemes
-- Responsive design
-- Accessible components
+### Changed
+
+### Fixed
+
+---
+
+<p align="right"> &nbsp;</p>
+
+_You can see all change logs [Here](/CHANGELOG.md)._
+
+<p align="right"> &nbsp;</p>
+
+---
+
+Author:
+
+[Arslan Ameer](www.arslanameer.com) | [GitHub](https://github.com/ArslanAmeer)
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/arslanameer)
