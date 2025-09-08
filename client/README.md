@@ -1,185 +1,119 @@
-# GigaShop Client
+# Next.js Boilerplate
 
-Modern e-commerce client application built with Next.js 15, TypeScript, and modern development tools.
+Modern **Next.js 15.3** boilerplate with **TypeScript** & **Tailwind CSS**
 
-## 🚀 Features
+Live Demo: https://nextjs15-boilerplate.vercel.app/en
 
-- **Next.js 15** with App Router and Server-Side Rendering
-- **TypeScript** for type safety
-- **Tailwind CSS** for styling
-- **Shadcn/ui** for beautiful UI components
-- **Tanstack Query** for data fetching and caching
-- **Zustand** for state management
-- **Axios** for HTTP client
-- **ESLint & Prettier** for code quality
-- **Husky** for git hooks
-- **CI/CD** with GitHub Actions
+## Features
 
-## 🛠️ Tech Stack
+With this template, you get all the awesomeness you need:
 
-- **Framework**: Next.js 15
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Shadcn/ui
-- **State Management**: Zustand
-- **Data Fetching**: Tanstack Query
-- **HTTP Client**: Axios
-- **Linting**: ESLint
-- **Formatting**: Prettier
-- **Git Hooks**: Husky
-- **Deployment**: Vercel
+- 📂 Advanced Folder Structures
+- ⚡ [Next.js](https://nextjs.org/) with App Router support
+- 💎 Type checking [TypeScript](https://www.typescriptlang.org/)
+- 🎨 Styled using [Tailwind CSS](https://tailwindcss.com/)
+- 📦 State management with [Zustand](https://zustand-demo.pmnd.rs/)
+- 🗺️ [next-intl](https://next-intl.dev/) for internationalization
+- 🧩 UI Components built with [shadcn/ui](https://ui.shadcn.com/)
+- 🔄 Data Fetching, Caching and Mutation with [TanStack Query](https://tanstack.com/query/latest)
+- ⌨️ Form handling with [React Hook Form](https://react-hook-form.com/)
+- 🔴 Validation library with [Zod](https://zod.dev/)
+- 🌸 Smart masking and validation with [@omergulcicek/forms](https://www.npmjs.com/package/@omergulcicek/forms)
+- 🧹 Linter with [ESLint](https://eslint.org/)
+- 💖 Code Formatter with [Prettier](https://prettier.io/)
+- 🎉 [Storybook](https://storybook.js.org/) for UI development
+- 🚨 Error tracking with [Sentry](https://sentry.io/)
+- 📊 Analytics with [Google Analytics](https://analytics.google.com/)
+- ⏳ Loading UI using [Skeleton Components](https://ui.shadcn.com/docs/components/skeleton)
+- 🌓 Dark theme with [next-themes](https://npmjs.com/package/next-themes)
+- 💡 [Absolute Imports](https://nextjs.org/docs/pages/building-your-application/configuring/absolute-imports-and-module-aliases) with `@` prefix
+- ✨ Beautiful and consistent icons from [Lucide](https://lucide.dev/)
+- 🐶 [Husky](https://typicode.github.io/husky/) for Git Hooks
+- 🤖 Sitemap.xml and robots.txt
+- ⚙️ Metadata files optimized for SEO
+- 🍪 Storage helpers for Local, Session, Cookies
+- 💯 Maximize lighthouse score
 
-## 📦 Installation
+## Project structure
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd client
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Set up environment variables:
-   ```bash
-   cp .env.example .env.local
-   ```
-
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## 🏗️ Project Structure
-
-```
-client/
-├── .husky/                 # Git hooks
-├── .next/                  # Next.js build output
-├── public/                 # Static assets
-├── src/
-│   ├── app/               # Next.js App Router pages
-│   ├── components/        # Reusable components
-│   │   └── ui/           # Shadcn/ui components
-│   ├── hooks/            # Custom React hooks
-│   ├── lib/              # Utility functions
-│   ├── providers/        # React providers
-│   ├── services/         # API services
-│   └── stores/           # Zustand stores
-├── components.json        # Shadcn/ui configuration
-├── next.config.ts        # Next.js configuration
-├── tailwind.config.js    # Tailwind CSS configuration
-└── tsconfig.json         # TypeScript configuration
-```
-
-## 📜 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint errors
-- `npm run format` - Format code with Prettier
-- `npm run format:check` - Check code formatting
-
-## 🎨 UI Components
-
-This project uses [Shadcn/ui](https://ui.shadcn.com/) for UI components:
-
-```bash
-# Add new components
-npx shadcn@latest add button
-npx shadcn@latest add card
-npx shadcn@latest add input
+```shell
+│
+├── .husky                          # Husky git hook scripts
+├── messages                        # i18n messages
+├── public                          # Public assets folder
+├── src
+│   ├── app                         # Next JS App (App Router)
+│   ├── assets                      # Static assets (images, fonts, etc.)
+│   ├── components                  # React components
+│   │   ├── icons                   # svg icons
+│   │   ├── features                # Components with hooks and calculations
+│   │   ├── shared                  # Header, footer, aside components
+│   │   ├── skeletons               # Loading components
+│   │   ├── ui                      # Atomic components
+│   │   └── widgets                 # Advanced UI components
+│   ├── constants                   # Project-wide constants
+│   ├── data                        # Static or mock data
+│   ├── helpers                     # Reusable utility functions (e.g., API, formatting, storage)
+│   ├── hooks                       # Reusable custom React hooks
+│   ├── i18n                        # Internationalization setup
+│   ├── lib                         # Common utility functions
+│   ├── providers                   # Global context providers (theme, data fetching, notifications, i18n)
+│   ├── schemas                     # Validation schemas
+│   ├── services                    # API request functions
+│   ├── stores                      # Global state
+│   ├── types                       # TypeScript type definitions
+│   └── .middleware                 # Middleware for Next.js
+├── .env                            # Environment variables
+├── .gitignore                      # Git ignore rules
+├── .prettierrc                     # Prettier config
+├── components.json                 # shadcn/ui config
+├── eslint.config.mjs               # ESLint config
+├── next.config.mjs                 # Next.js config
+├── package.json                    # Project dependencies and scripts
+├── postcss.config.js               # PostCSS config
+├── README.md                       # README file
+├── tailwind.config.js              # Tailwind CSS config
+└── tsconfig.json                   # TypeScript config
 ```
 
-## 🔧 State Management
+## File Naming Conventions
 
-Using Zustand for lightweight state management:
+The project follows consistent file naming conventions:
 
-```typescript
-// Example store
-export const useProductStore = create<ProductStore>()(
-  devtools(
-    persist(
-      (set, get) => ({
-        products: [],
-        favorites: [],
-        cart: [],
-        // ... actions
-      }),
-      { name: 'product-storage' }
-    )
-  )
-);
-```
+| File Type      | Example          | Style      |
+| -------------- | ---------------- | ---------- |
+| Component      | `LoginForm.tsx`  | PascalCase |
+| Hook           | `useLogin.ts`    | camelCase  |
+| Helper, Schema | `form-schema.ts` | kebab-case |
+| Folder         | `login-form/`    | kebab-case |
+| Constants      | `ALPHA_REGEX`    | SNAKE_CASE |
 
-## 📊 Data Fetching
+## Monitoring & Analytics
 
-Using Tanstack Query for efficient data fetching:
+🚧 Don't forget to replace all FIXME tags with proper code before finalizing the changes.
 
-```typescript
-// Example hook
-export const useProducts = () => {
-  return useQuery({
-    queryKey: ['products'],
-    queryFn: productService.getProducts,
-    staleTime: 5 * 60 * 1000,
-  });
-};
-```
+### Error Tracking
 
-## 🌐 API Integration
+We use [Sentry](https://sentry.io/) for error tracking and performance monitoring. To set up:
 
-Configured Axios instance with interceptors:
-
-```typescript
-const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL,
-  timeout: 10000,
-});
-```
-
-## 🚀 Deployment
-
-This project is configured for deployment on Vercel:
-
-1. Connect your GitHub repository to Vercel
-2. Set environment variables in Vercel dashboard
-3. Push to main branch to trigger deployment
-
-## 🤝 Development Workflow
-
-1. Create a new branch from `develop`
-2. Make your changes
-3. Run linting and formatting: `npm run lint && npm run format`
-4. Commit changes (Husky will run pre-commit hooks)
-5. Push branch and create Pull Request
-6. GitHub Actions will run CI/CD pipeline
-
-## 📝 Environment Variables
-
-Create a `.env.local` file:
+1. Create a Sentry account
+2. Add your DSN to `.env`:
 
 ```env
-NEXT_PUBLIC_API_URL=https://api.example.com
+NEXT_PUBLIC_SENTRY_DSN=your-sentry-dsn
 ```
 
-## 🔍 Code Quality
+### Analytics
 
-- **ESLint**: Configured with Next.js and TypeScript rules
-- **Prettier**: Consistent code formatting
-- **Husky**: Pre-commit hooks for code quality
-- **TypeScript**: Strict type checking
+We use [Google Analytics](https://analytics.google.com/) for tracking user behavior. To set up:
 
-## 📚 Learn More
+1. Create a Google Analytics account
+2. Add your ID to `.env`:
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn/ui](https://ui.shadcn.com/)
-- [Tanstack Query](https://tanstack.com/query)
-- [Zustand](https://zustand-demo.pmnd.rs/)
+```env
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+### Contributors
+
+- [@omergulcicek](https://github.com/omergulcicek)
